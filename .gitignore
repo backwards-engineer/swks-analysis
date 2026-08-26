@@ -1,0 +1,32 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.ssh/
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
+id_github*
+*credentials*
+*secrets*
+
+# Bundled runtime junction and local caches
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# Downloaded annual reports and intermediate research files
+sources/
+analyze.py
+update_builder.py
+
+# Publish the final workbook; keep authoring previews and logs local
+outputs/**
+!outputs/swks_20261020/
+!outputs/swks_20261020/Skyworks_Financial_Model.xlsx
+
+# Local SSH host cache
+.github_known_hosts
